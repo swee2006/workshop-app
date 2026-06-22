@@ -1,16 +1,72 @@
-# React + Vite
+# Workshop Registration & Confirmation App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite application for workshop registration with participant analytics dashboard.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Registration Form** - Register participants with name, email, phone, and workshop selection
+- **Duplicate Prevention** - Prevents duplicate registrations by email
+- **Dashboard Analytics** - View participant statistics and charts
+- **Local Storage** - Persistent data storage in browser
+- **Animated Background** - Beautiful moon and stars animation
+- **Responsive Design** - Works on desktop and mobile
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19.2.6
+- Vite 8.0.12
+- React Router 7.18.0
+- Recharts 3.8.1
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Install Dependencies
+```bash
+npm install
+```
+
+### Run Development Server
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173/`
+
+### Build for Production
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+workshop-app/
+├── src/
+│   ├── components/
+│   │   ├── DashboardCards.jsx
+│   │   ├── ParticipantTable.jsx
+│   │   ├── PopUp.jsx
+│   │   └── Sidebar.jsx
+│   ├── pages/
+│   │   ├── Register.jsx
+│   │   └── Dashboard.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   └── index.css
+├── public/
+├── package.json
+└── vite.config.js
+```
+
+## Usage
+
+1. Navigate to the **Register** page
+2. Fill in participant details
+3. Submit the form
+4. View registered participants in the table below
+5. Navigate to **Dashboard** to see analytics and charts
+
+## License
+
+MIT
